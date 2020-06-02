@@ -2,21 +2,44 @@
 
 layout: col-sidebar
 title: OWASP jvmxray
-tags: example-tag
-level: 1
-type: 
-pitch: A very brief, one-line description of your project
+tags: rasp monitor securitymanager java
+level: 2
+type: tool
+pitch: JVMXRay monitors application access to protected Java resources
 
 ---
 
-This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
+# Welcome to JVMXRay
 
-layout: This is the layout used by project and chapter pages.  You should leave this value as col-sidebar
+JVMXRay is a technology for monitoring access to system resources within the Java Virtual Machine.  It’s designed with application security emphasis but some will also find it beneficial for software quality processes and diagnostics.
 
-title: This is the title of your project or chapter page, usually the name.  For example, OWASP Zed Attack Proxy or OWASP Baltimore
+```
+CONSIDERATIONS:
+This project is being activty under review for acceptance as an OWASP project. Please
+consider this early stage code, with bugs, not suitable for production use. 
+There be dragons.  You were warned!
+```
 
-tags: This is a space-delimited list of tags you associate with your project or chapter.  If you are using tabs, at least one of these tags should be unique in order to be used in the tabs files (an example tab is included in this repo) 
+## Benefits
+Following is a quick list of some of the more important benefits.
 
-level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Flagship)
+### Identify protected resources
+Track different types of events of interest related to sockets, files, process execution, and more.  When an event of interest occurs, process it as you wish.  At the moment, adaptors for the system console (e.g., System.out), logback, and Java Logging, are available with others in process. 
 
-type: code, tool, documentation, or other
+### No code changes required
+JVMXRay does not require any changes to your application source code to work.  The code is pulled into the JVM by a command line option.  The solution is 100% Java code so it runs anywhere.
+
+### Supply chain insights
+An ancilary benefit of not requiring source code is that JVMXRay provides insight into your applications dependencies including 3rd party libraries (e.g. Jar files).  Events provide the source of origin where your classes where loaded when the event is generated.
+
+### Extensible & Open
+Don't see an adapter or filter that works for you and know how to code?  Roll up your sleeves and write one.  It's extensible.  Fix a bug and submit a pull requrest.  All the source code is available.
+
+## Audience
+The anticipated audience for JVMXRay is two-fold,<br/>
+
+**Systems Administrators**
+Individuals charged with system security and interested in new methods to gather security inteligence into Java applications.
+
+**Security Developers & Architects**
+Indiviudals interested in improved security intelligence about their applications.
