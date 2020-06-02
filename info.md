@@ -1,17 +1,14 @@
 ### jvmxray Information
-* [Flagship Project](#)
 * [Tool Project](#)
-* [Version 2.8.0](#)
 * [Builder](#)
-* [Breaker](#)
 
 ### Downloads or Social Links
-* [Download](#)
+* [Download](https://github.com/spoofzu/jvmxray/releases)
 * [Meetup](#)
 
 ### Code Repository
-* [repo](#)
+* [repo](https://github.com/spoofzu/jvmxray/)
 
 ### Change Log
-* [changes](#)
+* [changes](https://github.com/spoofzu/jvmxray/issues)
 
